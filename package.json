@@ -2,11 +2,13 @@
   "name": "vite",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://cristianlondonot.github.io/mandounificado-spiderfoft/",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=./",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
